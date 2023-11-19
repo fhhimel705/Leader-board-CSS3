@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kanit&family=Noto+Sans&family=Open+Sans:wght@300;400&family=Poppins:wght@500&family=Port+Lligat+Sans&family=Roboto+Slab&family=Work+Sans&display=swap");
+
+
+.banner{
+  width: 100%;
+  height: 94px;
+  background: #562EFF;
+}
+.idea{
+  color: #FFF;
+font-size: 24px;
+font-weight: 500;
+}
+.banner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav{
+  display: flex;
+}
+.nav-2{
+  color: #FFF;
+font-size: 16px;
+font-weight: 400;
+margin-left: 36px;
+}
+body {
+  background-color: #f3f1ff;
+  font-family: poppins;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.container {
+  width: 870px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 30px 30px 30px 30px;
+  margin-top: 36px;
+}
+.container-title {
+  color: #562eff;
+  font-size: 24px;
+  font-weight: 500;
+  /* margin-top: 3px; */
+}
+/* Players section style */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr , 1fr , 1fr; */
+  grid-row-gap: 30px;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+hr {
+  background: #d1d1d1;
+  margin: 30px 0;
+  height: 1px;
+}
+
+/* ---------
+top blogs style
+---------- */
+.top-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+.blogs .blog-img img {
+  /* width: 224px; */
+  height: 127px;
+}
+.blogs {
+  display: flex;
+  
+}
+.blog {
+  margin-left: 15px;
+}
+.blog-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  margin: 0 ;
+}
+.blog p {
+  color: #9f9f9f;
+  font-size: 16px;
+  font-weight: 400;
+  /* margin-top: 0; */
+}
+.blog a {
+  text-decoration: none;
+  color: #562eff;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ----------
+late course style
+------------- */
+.lates-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.course {
+  width: 253px;
+  box-shadow: 10px 10px 20px lightgray;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+}
+.course .thumbnail img {
+  width: 240px;
+  height: 121px;
+}
+.c-title {
+  color: #1e1e1e;
+  font-size: 20.034px;
+  font-weight: 500;
+}
+.c-author {
+  color: #ed6b4f;
+  font-size: 14.691px;
+  font-weight: 400;
+}
+.c-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ratings .fill {
+  color: #ffc014;
+}
+.ratings .empty {
+  color: #aeaeae;
+}
+.time{
+  border: none;
+  color: #ff2f00;
+  background-color: #f5cabfa8;
+  border-radius: 30px;
+  padding: 5px;
+}
+.rtn{
+  color: #A2A2A2;
+font-size: 14.691px;
+font-weight: 400;
+}
+@media screen and (max-width:688px) {
+  .nav-2{
+  color: #FFF;
+font-size: 13px;
+font-weight: 400;
+margin-left: 10px;
+}
+.container-title{
+  margin: 15px 20px;
+}
+  .container{
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+  }
+  .players{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  
+  }
+  .player{
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  /* .blog-title{
+    list vs grids
+  } */
+  .blogs{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .blog{
+    margin-left: 0;
+  }
+  .lates-course{
+    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .course{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width:689px) and (max-width:992px){
+  .container-title{
+  margin: 25px 30px;
+}
+  .container{
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+  }
+  .players{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  
+  }
+  .player{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .blogs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lates-course{
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+   
+  }
+  .course{
+    margin-left: 45px;
+  }
+  
+  
+}
